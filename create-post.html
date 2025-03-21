@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Create Post</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create Post</h1>
+      <form id="create-post-form" class="form-style">
+        <label for="post-title"></label>
+        <input type="text" id="post-title" placeholder="Post title" class="form-input"/>
+        <label for="post-content"></label>
+        <textarea id="post-content" placeholder="Post content"class="form-input form-textarea"></textarea>
+        <div class="button-container">
+          <button type="submit" class="button button--success form-button">
+            Submit Post
+          </button>
+          <button id="back-button" class="button button--danger form-button">
+            Back to Home
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./utils.js"></script>
+    <script src="./create-post.js"></script>
+  </body>
+</html>
